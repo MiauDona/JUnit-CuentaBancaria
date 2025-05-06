@@ -34,8 +34,7 @@ public class CuentaBancaria {
             try {
                 codBanco = Integer.parseInt(banco);
 
-                if (codBanco < 100 && codBanco > 999) // valor fuera de rango
-                {
+                if (codBanco < 100 && codBanco > 999) { // valor fuera de rango
                     throw new IllegalArgumentException("Código de banco erróneo: " + banco);
                 }
             } catch (Exception e) {
